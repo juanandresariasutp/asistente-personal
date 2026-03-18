@@ -1,5 +1,7 @@
 # Dependencies
 node_modules/
+gog.exe
+client_secret.json
 
 # Build output
 dist/
