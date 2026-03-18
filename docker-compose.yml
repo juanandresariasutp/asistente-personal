@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  assistant:
+    build: .
+    container_name: telegram_ai_assistant
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # Montamos el volumen persistente a la carpeta /app/data del contenedor
+      # donde reside la base de datos SQLite.
+      - assistant_data:/app/data
+
+# Definimos el volumen persistente
+volumes:
+  assistant_data:

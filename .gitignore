@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables (CRITICAL: Do not remove this)
+.env
+
+# Database and persistent files
+data/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
